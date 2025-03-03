@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="resume">
     <h1>Resume</h1>
 
     <div class="paragraph">
@@ -19,8 +19,9 @@
         <div style="clear:both"></div>
       </div>
     </div>
+
     <div class="photo">
-      <img src="img/resume-photo.png" alt="Photo of John" />
+      <img src="img/chrisProfile.jpeg" alt="Photo of Chris" />
     </div>
 
     <div style="clear:both"></div>
@@ -28,28 +29,23 @@
     <div class="full-content">
       <h2>Work experience</h2>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2018-2019</h4>
+      <h3>Primrows - Tursiops Studios</h3>
+      <h4>2024-Present</h4>
+      <div>Game about planting flowers</div>
+      <div class="tech-stack">Unity, C#</div>
 
-      <div>It's classified so I can't speak about it.</div>
+      <h3>Whisker Squadron - </h3>
+      <h4>2021-2024</h4>
+      <div>Game about cats flying spaceships</div>
+      <div class="tech-stack">Unity, C#</div>
 
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <h3>Indie Pogo - LoweBros.Studios</h3>
+      <h4>2016-2020</h4>
+      <div>Game about indie clashing with pogo-abilities</div>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2015-2017</h4>
+      <div class="tech-stack">Game Maker</div>
 
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Even more Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
-
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2012-2015</h4>
-
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
-
-      <h2>Skills</h2>
+      <!--<h2>Skills</h2>
 
       <div class="skill-set">
         <h3>Lethal</h3>
@@ -69,38 +65,13 @@
         <SkillRate name="Seduction" :rate="1" />
         <SkillRate name="Sense of humor" :rate="2" />
       </div>
-      <div style="clear:both" />
+      <div style="clear:both" />-->
 
       <h2>Education</h2>
+      <h3>University of Michigan - 2013</h3>
+      <h4>Bachelor's of Science</h4>
+      <div>Computer Science</div>
 
-      <h3>Kindergarten - 1985</h3>
-      <h4>Kindergarten degree</h4>
-      <div>Specialty in bullying and fighting (58 wins, 58 K-O, 0 losses)</div>
-
-      <h2>Languages</h2>
-
-      <h3>American</h3>
-      <div>Basic knowledge but I know lots of one-liners</div>
-
-      <h3>That's it</h3>
-      <div>Who needs another language when you speak American?</div>
-
-
-      <h2>Besides...</h2>
-      <div>
-        <h3>I ❤️ Violence</h3>
-        <div>I find it really soothing to just shoot at bad guys</div>
-
-        <h3>I 🧡 Sports</h3>
-        <div>I used to be thin but then I ingested 10 kilos of steroids and proteins a day while doing 1000 push-ups.</div>
-
-        <h3>I 💛 Politics</h3>
-        <div>I hope I can have a career here someday but I might have temper issues.</div>
-
-        <h3>I 💚 Flowers</h3>
-        <div>Especially the big ones, with the trunk and leaves.</div>
-
-      </div>
     </div>
   </div>
 </template>
@@ -112,12 +83,19 @@ import SkillRate from "@/components/SkillRate.vue";
 export default Vue.extend({
   name: "Resume",
   components: {
-    SkillRate,
+   // SkillRate,
   },
 });
 </script>
 
+
 <style scoped>
+.resume {
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
 h2 {
   font-weight: 100;
   font-size: 2em;
@@ -158,19 +136,24 @@ h4 {
   padding-bottom: 10px;
 }
 
-.photo img {
+.photo {
   height: 300px;
   width: 300px;
+  border-radius: 50%;
+  overflow: hidden;  /* Ensures any overflow is hidden */
+}
+
+.photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .tech-stack {
   font-style: italic;
 }
 
-.photo {
-  margin-top: 50px;
-  text-align: center;
-}
+
 
 @media only screen and (min-width: 620px){
   .paragraph {
@@ -179,8 +162,6 @@ h4 {
 
   .photo {
     float: left;
-    padding: 30px;
-    padding-left: 80px;
   }
 
   .skill-set {

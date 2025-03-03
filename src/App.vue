@@ -1,15 +1,8 @@
 <template>
   <div id="app">
-    
-    <link rel="stylesheet" href="@/assets/projects/projects.css" type="text/css">
-
-    <Header />
-    <div class="main">
-      <transition name="fade" mode="out-in">
-        <router-view/>
-      </transition>
-    </div>
-    <Footer />
+    <Header/>
+    <router-view/>
+    <Footer/>
   </div>
 </template>
 
@@ -46,6 +39,10 @@ html, body {
 }
 
 #app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
   background-color: @contentBgColor;
   color: @textColor;
 
@@ -57,6 +54,8 @@ html, body {
   line-height: 1.6em;
   text-align: justify;
 }
+
+
 
 h1, h2, h3, h4, h5 {
   text-align: left;
@@ -82,6 +81,11 @@ h1 {
 
 .main {
     padding: 12px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
   }
 
 @media only screen and (min-width: 620px){
@@ -99,9 +103,10 @@ h1 {
 
   .main {
     padding: 0px 40px 40px 180px;
+    
   }
 
-  .main, .header, .footer {
+  .main, .header {
     max-width: 1200px;
     margin: 0 auto;
   }

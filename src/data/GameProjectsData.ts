@@ -1,14 +1,13 @@
 import ProjectData from '@/data/ProjectData.ts'
 
 export default [
-    new ProjectData("project-1", "Optimistic Chubby", "img/projects/project-1-icon.png", 
+    new ProjectData("primrows", "PrimRows", "img/projects/primrowslogo.png", 
     `
     <div class="paragraph">
-     <strong>Optimistic Chubby</strong> is a thing of beauty that I am so proud of. It's available on Android because why not.
-     <br/>Image by <a href="https://www.pexels.com/fr-fr/@knownasovan" target="_blank">OVAN</a>.
+     <strong>Primrows</strong> is a game where you grow, prune, and cultivate your garden in a game of logic, chance, and pattern recognition.
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/9DzSfbzv2hk" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="paragraph center">
         <a href="https://play.google.com/store/apps/details?id=some.playstore.thing" target="_blank"><img src="img/projects/play-store-logo.png" alt="Play Store badge" /></a>
@@ -16,6 +15,7 @@ export default [
 
     <div class="paragraph">
         Main features :
+        <div class="tech-stack">Unity, C#</div>
         <ul>
         <li>Some stuff</li>
         <li>Some great stuff</li>
@@ -25,17 +25,16 @@ export default [
     </div>
 
     <div class="paragraph center">
-        <img class="phone-screenshot" src="https://fakeimg.pl/300x534/" alt="Optimistic Chubby Screenshot" />
-        <img class="phone-screenshot" src="https://fakeimg.pl/300x534/" alt="Optimistic Chubby Screenshot" />
+        <img class="phone-screenshot" src="https://images.squarespace-cdn.com/content/v1/5c5c988b9d414925a428ae3a/1736913392229-IVO9YSC91UJROMATRE71/Primrows-fallpumpkin2-Steam+%282%29.png?format=1000w" alt="Primrows Screenshot" />
+        <img class="phone-screenshot" src="https://images.squarespace-cdn.com/content/v1/5c5c988b9d414925a428ae3a/1736913393997-0AV2S6DDNH9QY4VHG21B/Primrows-winterhearts-Steam+%282%29.jpg?format=1000w" alt="Primrows Screenshot" />
     </div>
-    `, "#23bd69", true),
-    new ProjectData("project-2", "Singing Addict", "img/projects/project-2-icon.png", `
+    `, "#4F5165"),
+    new ProjectData("whiskersquadron", "Whisker Squadron", "img/projects/WhiskerSquadronHeader.jpg", `
     <div class="paragraph">
-        <strong>Optimistic Chubby Blog</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@adonyi-gabor-604571">Adonyi Gábor</a>.
+        <strong>Whisker Squadron</strong> is an intense roguelike shooter from the creators of RACE THE SUN.
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/dxGs-J8RDjE" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="paragraph">
@@ -50,8 +49,7 @@ export default [
 
     <div class="paragraph">
     <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code is available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
+        Available on <a href="https://store.steampowered.com/app/2140100/Whisker_Squadron_Survivor/" target="_blank">Steam</a>.
     </div>
     </div>
 
@@ -61,14 +59,13 @@ export default [
     <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Singing Addict Screenshot" />
     <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Singing Addict Screenshot" />
     </div>
-    `, "#5a78af"),
-    new ProjectData("project-3", "Drawing Overload", "img/projects/project-3-icon.png", `
+    `, "#4F5165"),
+    new ProjectData("indiepogo", "Indie Pogo", "img/projects/IndiePogoLogo.png", `
     <div class="paragraph">
-        <strong>Drawing Overload</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@miphotography">Miesha Maiden</a>.
+        <strong>Indie Pogo</strong> is a unique, retro-inspired fighting crossover game!
     </div>
     <div class="paragraph center">
-        <iframe class="youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="youtube" src="https://www.youtube.com/embed/vrxLL1UAODc" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="paragraph">
@@ -83,71 +80,16 @@ export default [
 
     <div class="paragraph">
         <div class="notice">
-        Playable in the browser (WebGL) on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code is available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
+        Available on <a href="https://store.steampowered.com/app/818210/Indie_Pogo/" target="_blank">Steam</a>.
         </div>
     </div>
 
     <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drawing Overload Screenshot" />
+        <img class="pc-screenshot" src="https://indiepogo.com/presskit/images/Screen2.webp" alt="Drawing Overload Screenshot" />
+        <img class="pc-screenshot" src="https://indiepogo.com/presskit/images/TitleScreen.webp" alt="Drawing Overload Screenshot" />
+        <img class="pc-screenshot" src="https://indiepogo.com/presskit/images/Screen1.webp" alt="Drawing Overload Screenshot" />
+        <img class="pc-screenshot" src="https://indiepogo.com/presskit/images/Screen5.webp" alt="Drawing Overload Screenshot" />
     </div>
-    `, "#383838"),
-    new ProjectData("project-4", "Eugeneable", "img/projects/project-4-icon.png", `
-    <div class="paragraph">
-    <strong>Eugeneable</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-    <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@neo8iam">NEOSiAM 2020</a>.
-    </div>
-    
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
-    </div>
+    `, "#4F5165"),
 
-    <div class="paragraph">
-        <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        </div>
-    </div>
-
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Eugeneable Screenshot" />
-    </div>
-    `, "#e80fb7"),
-    new ProjectData("project-5", "Cloud Drew Land", "img/projects/project-5-icon.png", `
-    <div class="paragraph">
-        <strong>Cloud Drew Land</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-        <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@cottonbro">cottonbro</a>.
-    </div>
-    
-    <div class="paragraph">
-        Main features :
-        <ul>
-        <li>Some stuff</li>
-        <li>Some great stuff</li>
-        <li>More awesome stuff</li>
-        <li>And then some</li>
-        </ul>
-    </div>
-
-    <div class="paragraph">
-        <div class="notice">
-        Windows build available on <a href="https://some.where/nice" target="_blank">itch.io</a>.
-        Source code available on <a href="https://github.com/yourself" target="_blank">GitHub</a>.
-        </div>
-    </div>
-
-    <div class="paragraph center">
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-        <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Cloud Drew Land Screenshot" />
-    </div>`, "#e48246")
 ];

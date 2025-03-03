@@ -2,7 +2,7 @@
   <div class="footer">
     
     <div class="left"><a href="https://github.com/schouffy/gamedev-portfolio" target="blank">Portfolio</a> by schouffy</div>
-    <div class="right">Reach me at <a href="mailto:my@email.com">my@email.com</a> or <router-link to="/contact">through here</router-link></div>
+    <div class="right">Reach me at <a href="mailto:cddatkins@email.com">cddatkins@email.com</a> or <router-link to="/contact">through here</router-link></div>
   </div>
 </template>
 
@@ -21,9 +21,13 @@ export default Vue.extend({
 .footer {
   background-color: @bodyBgColor;
   width: 100%;
+  margin: 20px 0 auto;
+  height: 60px;
   font-size: 0.8em;
   opacity: 0.7;
   padding-bottom: 30px;
+  position: fixed;
+  bottom: 0;
 }
 
 .left, .right {

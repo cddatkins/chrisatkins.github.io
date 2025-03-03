@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <h1>Other stuff</h1>
+  <div class="projects">  
+    <h1>Other Projects</h1>
 
     <div style="margin-bottom: 30px;">
-      And here are some other stuff I've made or heavily contributed to, which are totally different than the stuff from earlier.
+      And here are some other projects I've made or heavily contributed to.
     </div>
     <ProjectsList v-bind:projects="projects" />
   </div>
@@ -26,3 +26,11 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style scoped>
+.projects {
+  width: 50%;
+  margin: 0 auto;
+  
+}
+</style>

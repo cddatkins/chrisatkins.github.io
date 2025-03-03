@@ -1,20 +1,21 @@
 <template>
-  <div style="margin-bottom: 80px;">
-    <h1>Hello!</h1>
+  <div class="about">
+    <h1>Hello World!</h1>
 
     <div class="paragraph">
       <div>
-        I'm <strong>John Matrix</strong>, a former Delta Force operative, now a hobbyist lumberjack.<br/>
-        I spend my days living alone with my daughter Jenny, and cutting trees and carrying trunks around to keep in shape.
+        I'm <strong>Chris Atkins</strong>, a Game Programmer.<br/>
+        I've mostly worked with <strong>Unity</strong> and <strong>C#</strong> but I'm always looking to learn new things.<br/>
+        I'm currently working on a few projects, some of which you can see on the <router-link to="/game-projects">Game Projects</router-link> page.<br/>
       </div>
 
-      <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">stuff</router-link>, on <router-link to="/other-projects">other stuff</router-link>, and took part in <router-link to="/resume">a few things</router-link> as well.</div>
+      
 
-      <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a monk, like my good friend John Rambo did a few years back. You can reach me at <a href="mailto:johnmatrix@deltaforce.us">johnmatrix@deltaforce.us</a> or <router-link to="/contact">through here</router-link>.</div>
+      <!--<div style="margin-top: 40px;">I'm <strong>currently looking for work</strong> as a Game Programmer. You can reach me at <a href="mailto:cddatkins@gamil.com">cddatkins@gmail.com</a> or <router-link to="/contact">through here</router-link>.</div>-->
     </div>
 
     <div class="photo">
-      <img src="img/avatar.png" alt="Avatar of John" /> 
+      <img src="img/chrisProfile.jpeg" alt="Avatar of Chris" /> 
     </div>
 
     <div style="clear:both"></div>
@@ -23,14 +24,29 @@
 </template>
 
 <style scoped>
+
+.about {
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
 .paragraph {
   max-width: 700px;
   margin-bottom: 20px;
 }
 
 .photo {
-  margin-top: 50px;
-  text-align: center;
+  width: 300px;      /* Set the desired width */
+  height: 300px;     /* Set the same height to create a square */
+  border-radius: 50%;
+  overflow: hidden;  /* Ensures any overflow is hidden */
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
 @media only screen and (min-width: 620px){
@@ -40,8 +56,6 @@
 
   .photo {
     float: left;
-    padding: 10px;
-    padding-left: 80px;
   }
 }
 
